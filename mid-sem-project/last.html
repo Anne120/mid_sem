@@ -1,0 +1,53 @@
+<div class="Yorder">
+              <form action="payment.php" method="POST">
+              <table>
+                <tr>
+                  <th colspan="2">Your order</th>
+                
+                 
+                  <tr><td>Number of Chicken(Qty): </td>
+                    <td><input type="number" id="amount" name="amount" oninput="calc();"></td>
+                  </tr>
+                  <tr><td><br> Kg (per chicken): </td>
+                    <td><input type="number" id="quantity" name="quantity" oninput="calc();"></td>
+                  </tr>
+                    <tr><td><br> Total: </td>
+                      <td><input type="number" id="total" name="total"></td>
+                    </tr>
+
+                
+                
+                <tr>
+                  <div>
+                  </div>
+                  <tr>
+                    <td>phone</td>
+                    <td><input type="text" name="phone"></td>
+                  </tr>
+                </tr>
+              </table><br>
+              <!-- <label for="cars">Choose a car:</label>
+              <select id="pay" name="pay">
+                <option value="cash">cash</option>
+                <option value="Mpesa">Mpesa</option>
+                <option value="Paypal">paypal</option>
+                
+              </select> -->
+
+              <div>
+                <input type="radio" name="pay" value="Mpesa" checked> Mpesa
+              </div>
+              <p>
+                Accoun NO: 0480293156002 </p>
+                <p> Paybill NO: 517320</p>
+                 <div>
+                <input type="radio" name="pay" value="Cash"> Cash on Delivery
+              </div>
+              <div>
+                <input type="radio" name="pay" value="Paypal"> Paypal <span>
+                <img src="https://www.logolynx.com/images/logolynx/c3/c36093ca9fb6c250f74d319550acac4d.jpeg" alt="" width="50">
+                </span>
+              </div>
+              <br><button type="submit">Place Order</button>
+            </form>
+            </div><!-- Yorder -->
